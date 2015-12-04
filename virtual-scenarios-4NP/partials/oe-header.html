@@ -1,0 +1,18 @@
+<div class="pure-g">
+  <div class="pure-u-1">
+    <div class="info">
+      <div class="course-info mobile-check" mobile-check>
+        <p>
+          {{$state.coursePrefix}}
+          <br>{{$state.courseNumber}}
+        </p>
+      </div>
+      <h1 class="app-info">{{$state.appTitle}}</h1>
+    </div>
+    <button class="mobile-menu-button" ng-if="oeMenu.on" ng-click="oeMenuToggle()"><span class="glyph">&#xf0c9;</span></button>
+    <nav ng-if="oeMenu.on" ng-class="{'mobile-open': oeMenu.open}" ng-click="oeMenuToggle('off')">
+      <a ng-href="#/">Link 1</a>
+      <a ng-href="#/">Link 2</a>
+    </nav>
+  </div>
+</div>

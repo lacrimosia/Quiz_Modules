@@ -1,0 +1,21 @@
+<div class="container relative">
+	<div class="pure-g">
+    <div class="pure-u-1">
+      <p class="breadcrumb">
+        <a href="#/">Home</a> &raquo; Overview
+      </p>
+      <p>
+        Click on the <span class="point"><button></button></span> below to enter a scenario.
+      </p>
+    </div>
+  </div>
+  <div class="pure-g relative">
+    <div class="pure-u-1">
+      <div class="point" ng-repeat="scenario in data.scenarios" ng-style="position(scenario)">
+        <a ng-href="#/overview/scenario/{{ $index + 1 }}" title="{{scenario.title}}" ></a>
+        <span class="label"><div>Scenario {{ $index + 1 }}: {{scenario.title}}</div></span>
+      </div>
+      <img src="img/overview.png" class="overview" alt="overview">
+    </div>
+  </div>
+</div>

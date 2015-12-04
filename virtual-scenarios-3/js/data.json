@@ -1,0 +1,110 @@
+{
+  "appTitle": "Virtual Hospital - Activity 3",
+  "coursePrefix": "NURS",
+  "courseNumber": 711,
+  "scenarios": [
+    {
+      "title": "Activity 3",
+      "startPoint": {
+        "top": 6.7,
+        "left": 67.2
+      },
+      "img": "img/NURS711_Activity03.jpg",
+      "points": [
+        {
+          "top": 21,
+          "left": 27.5,
+          "label": "Electronic Health Record (EHR)",
+          "info": "Mr. Smith: 2/1/2015, 8 a.m., PPT 58; recommend heparin bolus: 80 units/kg."
+        },
+        {
+          "top": 21,
+          "left": 40.5,
+          "label": "Computerized Provider Order Entry System",
+          "info": ""
+        },
+        {
+          "top": 21,
+          "left": 53.5,
+          "label": "Scheduling System",
+          "info":""
+        }
+      ],
+      "questions": [
+        {
+          "type": "radios",
+          "question": "Name the information system involved in the message \"recommend heparin bolus: 80 units/kg\" displayed on the EHR.",
+          "choices": [
+            "Results management system",
+            "Order entry management system",
+            "Decision support system",
+            "Patient support system"
+          ],
+          "answers": [
+            "Decision support system"
+          ],
+          "feedback": "Makes a recommendation for treatment depending on lab results."
+        },
+        {
+          "type": "radios",
+          "question": "How could the heparin recommendation on the screen have been made even safer, given the interoperability of all hospital systems?",
+          "choices": [
+            "By calculating the exact dose based on the patient’s weight in kg",
+            "By sending a notice to the Provider Order Entry System",
+            "By sending a notice to the pharmacy",
+            "By sounding an alarm"
+          ],
+          "answers": [
+            "By calculating the exact dose based on the patient’s weight in kg"
+          ],
+          "feedback": "Forcing the caregiver to calculate the dose manually introduces a source for error."
+        },
+        {
+          "type": "radios",
+          "question": "Name the information system involved in the message \"Mr. Smith: 2/1/2015, 8 a.m., PPT 58.\"",
+          "choices": [
+            "Patient support system",
+            "Clinical information system",
+            "Electronic communication and connectivity system",
+            "Health information and data system"
+          ],
+          "answers": [
+            "Clinical information system"
+          ],
+          "feedback": "Point of care system that supports care by providing instant access to the clinician."
+        },
+        {
+          "type": "checkboxes",
+          "question": "The nurse looks at the \"computerized provider information system\" and finds an order for a stat bolus of heparin. The nurse has confidence in this order for which of the following reasons? (Check all that apply.)",
+          "choices": [
+            "The dose is based on accurate, current information",
+            "The system ensures that the name of the drug is accurate.",
+            "The pharmacy has received a copy of this order.",
+            "The system has checked for the possibility of drug interaction, allergy, or overdose."
+          ],
+          "answers": [
+            "The dose is based on accurate, current information",
+            "The system ensures that the name of the drug is accurate.",
+            "The pharmacy has received a copy of this order.",
+            "The system has checked for the possibility of drug interaction, allergy, or overdose."
+          ]
+        },
+        {
+          "type": "radios",
+          "question": "The nurse looks at the scheduling system. In terms of administrative processes related to patient care, what information will be there?",
+          "choices": [
+            "The nurse’s work schedule for the coming month.",
+            "Insurance eligibility verification.",
+            "Electronic scheduling for the next PPT draw.",
+            "The medication administration schedule."
+          ],
+          "answers": [
+            "Electronic scheduling for the next PPT draw."
+          ],
+          "feedback": "Schedules in-patient procedures."
+        }
+      ],
+      "answerCode": 0022
+    }
+  ]
+}

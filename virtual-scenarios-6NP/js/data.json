@@ -1,0 +1,119 @@
+{
+  "appTitle": "Virtual Hospital - Activity 6NP",
+  "coursePrefix": "NURS",
+  "courseNumber": 711,
+  "scenarios": [
+    {
+      "title": "Patient A",
+      "startPoint": {
+        "top": 6.7,
+        "left": 54.8
+      },
+      "img": "img/NURS711_Activity06_NP_PatientA.jpg",
+      "points": [
+        {
+          "top": 32,
+          "left": 69,
+          "label": "Patient",
+          "info": "\"I have had my light on for hours. No one ever answers it. I need my pain medication!\""
+        }
+      ],
+      "questions": [
+        {
+          "type": "checkboxes",
+          "question": "When Patient A completes the CAHPS, for which of the following key topics are they likely to report dissatisfaction? (Select all that apply.)",
+          "choices": [
+            "Communication with doctors",
+            "Communication with nurses",
+            "Responsiveness of hospital staff",
+            "Pain management"
+          ],
+          "answers": [
+            "Communication with nurses",
+            "Responsiveness of hospital staff",
+            "Pain management"
+          ],
+          "feedback": ""
+        },
+        {
+          "type": "checkboxes",
+          "question": "When you responded to Patient A, you discover that he had his pain medication an hour ago; the next dose is not allowed for two more hours. Also, you note that you had responded to his light just 15 minutes ago, indicating that his perceptions are not supported by fact. Why does CMS measure patient perceptions instead of more objective findings? (Select all that apply.)",
+          "choices": [
+            "Such information improves patient safety.",
+            "Patient perceptions point to the difference between the care provided and the care that should be provided.",
+            "Consumer satisfaction provides a useful outcome measure for quality of care.",
+            "Consumer data identifies trouble areas."
+          ],
+          "answers": [
+            "Patient perceptions point to the difference between the care provided and the care that should be provided.",
+            "Consumer satisfaction provides a useful outcome measure for quality of care.",
+            "Consumer data identifies trouble areas."
+          ],
+          "feedback": ""
+        }
+      ],
+      "answerCode": 0443
+    },
+    {
+      "title": "Patient B",
+      "startPoint": {
+        "top": 6.7,
+        "left": 67.2
+      },
+      "img": "img/NURS711_Activity06_NP_PatientB.jpg",
+      "points": [
+        {
+          "top": 68,
+          "left": 58,
+          "label": "Patient",
+          "info": "\"Help.\""
+        }
+      ],
+      "questions": [
+        {
+          "type": "radios",
+          "question": "Patient B has fallen out of bed. Where in the Risk Management Matrix would you place patient falls? ",
+          "choices": [
+            "Low probability/Significant impact",
+            "Medium probability/Moderate impact",
+            "High probability/Moderate impact",
+            "High probability/Significant impact"
+          ],
+          "answers": [
+            "High probability/Significant impact"
+          ],
+          "feedback": "Hospitalized patients have a high probability of falling with severe consequences possible."
+        },
+        {
+          "type": "checkboxes",
+          "question": "In constructing a Haddon Matrix for Patient B’s fall out of bed, which of the following factors would go under the Human column in the Preinjury row? (Select all that apply.)",
+          "choices": [
+            "Side rails in up position",
+            "Lights turned off",
+            "Recent narcotic analgesia",
+            "Call bell out of reach"
+          ],
+          "answers": [
+            "Recent narcotic analgesia"
+          ],
+          "feedback": ""
+        },
+        {
+          "type": "radios",
+          "question": "You put Patient B back in bed after a physical exam indicates no apparent injury. The physician orders hourly monitoring for possible neurological injury. You notify Risk Management of the adverse event. Should someone notify the family?",
+          "choices": [
+            "No; if the patient was not harmed, there is no need.",
+            "No; he is disoriented from the narcotic analgesia and won’t recall the event.",
+            "Yes, the fall has necessitated a change in the patient’s care.",
+            "Yes; the family should be notified of all adverse events."
+          ],
+          "answers": [
+            "Yes, the fall has necessitated a change in the patient’s care."
+          ],
+          "feedback": "See p. 269."
+        }
+      ],
+      "answerCode": 1933
+    }
+  ]
+}

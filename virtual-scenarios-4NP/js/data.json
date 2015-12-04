@@ -1,0 +1,104 @@
+{
+  "appTitle": "Virtual Hospital - Activity 4",
+  "coursePrefix": "NURS",
+  "courseNumber": 711,
+  "scenarios": [
+    {
+      "title": "Activity 4",
+      "startPoint": {
+        "top": 6.7,
+        "left": 67.2
+      },
+      "img": "img/NURS711_Activity04.jpg",
+      "points": [
+        {
+          "top": 33,
+          "left": 40,
+          "label": "Clinical Information System",
+          "info": "Mr. Smith: discharge protocol for patient with pulmonary embolism."
+        },
+        {
+          "top": 81,
+          "left": 14,
+          "label": "Telephone",
+          "info": "Call (702) 555-5555 to check whether Ms. Jones, discharged yesterday with diabetes, is taking insulin as prescribed."
+        }
+      ],
+      "questions": [
+        {
+          "type": "checkboxes",
+          "question": "What advantage(s) are there of providing standardized discharge instructions and patient education through the clinical information system? (Check all that apply.)",
+          "choices": [
+            "Customizes the material to the learning style of the patient",
+            "Improves documentation of education",
+            "Standardizes instructions",
+            "Streamlines clinician workflow"
+          ],
+          "answers": [
+            "Improves documentation of education",
+            "Standardizes instructions",
+            "Streamlines clinician workflow"
+          ]
+        },
+        {
+          "type": "checkboxes",
+          "question": "What disadvantage(s) are there of providing standardized discharge instructions and patient education through the clinical information system? (Check all that apply.)",
+          "choices": [
+            "Materials may not be suitable for a low literacy patient.",
+            "Doesn't allow the clinician to modify the materials.",
+            "May not be up to date.",
+            "Does not link to a coded nursing language."
+          ],
+          "answers": [
+            "Materials may not be suitable for a low literacy patient."
+          ]
+        },
+        {
+          "type": "radios",
+          "question": "If a clinician telephones a recently discharged patient about medication compliance, what is this considered?",
+          "choices": [
+            "Telemonitoring",
+            "Telephony",
+            "Store and forward telehealth",
+            "Real-time telehealth"
+          ],
+          "answers": [
+            "Telephony"
+          ],
+          "feedback": "Most basic type of telehealth."
+        },
+        {
+          "type": "checkboxes",
+          "question": "Which of the following would be an improvement over the telephone to interact with a recently-discharged patient with diabetes? (Check all that apply.)",
+          "choices": [
+            "Store-and-forward telehealth",
+            "Real-time telehealth",
+            "Remote monitoring",
+            "Webpage chat room"
+          ],
+          "answers": [
+            "Real-time telehealth",
+            "Remote monitoring"
+          ],
+          "feedback": "Real-time telehealth: could use Skype for a face to face interaction. Remote monitoring: nurse could receive blood glucose meter data."
+        },
+        {
+          "type": "checkboxes",
+          "question": "This hospital is part of a regional health information exchange (HIE). In what way could public health agencies use data from its Electronic Health Record system to assess and monitor the health of communities and populations? (Check all that apply.)",
+          "choices": [
+            "To determine the quality and appropriateness of provider orders",
+            "To develop crowdsourcing",
+            "Assess the epidemiology of diseases",
+            "Conduct disease surveillance"
+          ],
+          "answers": [
+            "Assess the epidemiology of diseases",
+            "Conduct disease surveillance"
+          ],
+          "feedback": "Assess the epidemiology of diseases: it is already being used to assess diabetes epidemiology. Conduct disease surveillance: aggregate data can detect an outbreak."
+        }
+      ],
+      "answerCode": 5657
+    }
+  ]
+}

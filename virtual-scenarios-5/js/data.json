@@ -1,0 +1,96 @@
+{
+  "appTitle": "Virtual Hospital - Activity 5",
+  "coursePrefix": "NURS",
+  "courseNumber": 711,
+  "scenarios": [
+    {
+      "title": "Activity 5",
+      "startPoint": {
+        "top": 6.7,
+        "left": 67.2
+      },
+      "img": "img/NURS711_Activity05.jpg",
+      "points": [
+        {
+          "top": 21,
+          "left": 27.5,
+          "label": "Admission, Discharge, and Transfer System",
+          "image": "img/activity5-chart.png"
+        }
+      ],
+      "questions": [
+        {
+          "type": "radios",
+          "question": "What would go first in the process you are studying? (Questions 1-3 are related to a process flowchart as shown on Sollecito & Johnson, pp. 94-95.)",
+          "choices": [
+            "Clean the room",
+            "Patient discharge",
+            "Assign housekeeper",
+            "Notification that room is ready"
+          ],
+          "answers": [
+            "Patient discharge"
+          ],
+          "feedback": ""
+        },
+        {
+          "type": "radios",
+          "question": "Using the symbols on p. 94, what shape would you use for \"Clean the room\"? (Questions 1-3 are related to a process flowchart as shown on Sollecito & Johnson, pp. 94-95.)",
+          "choices": [
+            "Circle",
+            "Diamond",
+            "Oblong",
+            "Triangle"
+          ],
+          "answers": [
+            "Oblong"
+          ],
+          "feedback": "This represents an action."
+        },
+        {
+          "type": "checkboxes",
+          "question": "Once you have created the process flowchart, what would be the next step? (Questions 1-3 are related to a process flowchart as shown on Sollecito & Johnson, pp. 94-95.) Select all that apply:",
+          "choices": [
+            "Determine the source of the inputs.",
+            "Are there equipment, staff, or regulatory constraints?",
+            "Chart each step in finer detail.",
+            "Consult with members of the work team to achieve a common understanding."
+          ],
+          "answers": [
+            "Consult with members of the work team to achieve a common understanding."
+          ],
+          "feedback": "The improvement process can’t continue until there is consensus."
+        },
+        {
+          "type": "radios",
+          "question": "Look at the chart displayed on the monitor. The housekeeping department has a benchmark standard of two hours to clean a room. Is the housekeeping department achieving this benchmark?",
+          "choices": [
+            "No, because there are extreme variables outside the control limits.",
+            "Not possible to tell without calculating the average length of time per room cleaned.",
+            "Not possible to tell because this chart does not show when cleaning commences.",
+            "Yes, because the data are under control."
+          ],
+          "answers": [
+            "Not possible to tell without calculating the average length of time per room cleaned."
+          ],
+          "feedback": ""
+        },
+        {
+          "type": "radios",
+          "question": "Using the Six Sigma methodology for eliminating defects and reducing variability, what is the defect that this quality improvement exercise is intended to improve?",
+          "choices": [
+            "The length of time after a patient is discharged before housekeeping is notified.",
+            "The length of time it takes for housekeeping to prepare a recently vacated patient room.",
+            "The length of time an admitted patient must wait in the ED until a bed is available.",
+            "The variability in length of time between when a patient is discharged and when a room is cleaned."
+          ],
+          "answers": [
+            "The length of time an admitted patient must wait in the ED until a bed is available."
+          ],
+          "feedback": "That is the defect in patient outcome."
+        }
+      ],
+      "answerCode": 2985
+    }
+  ]
+}

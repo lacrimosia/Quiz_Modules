@@ -1,0 +1,119 @@
+{
+  "appTitle": "Virtual Hospital - Activity 1",
+  "coursePrefix": "NURS",
+  "courseNumber": 711,
+  "scenarios": [
+    {
+      "title": "Activity 1",
+      "startPoint": {
+        "top": 6.7,
+        "left": 67.2
+      },
+      "img": "img/NURS711_Activity01.jpg",
+      "points": [
+        {
+          "top": 34,
+          "left": 13.5,
+          "label": "Electronic Health Record",
+          "info": ""
+        },
+        {
+          "top": 32,
+          "left": 69,
+          "label": "Patient",
+          "info": "74 year old male patient with pneumonia.  Temperature 102° F, P 100, R 32"
+        },
+        {
+          "top": 45,
+          "left": 38.5,
+          "label": "Pulse Oximetry Machine",
+          "image": "img/include.jpg",
+          "overlays": [
+            {
+              "top": 13,
+              "left": 69.8,
+              "data": 89,
+              "class": "custom-overlay-class"
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "type": "radios",
+          "question": "What type of CBIS is displayed in this room?",
+          "choices": [
+            "Clinical Information System",
+            "Decision Support System",
+            "Management Information System",
+            "Hospital Information System"
+          ],
+          "answers": [
+            "Clinical Information System"
+          ],
+          "feedback": "Integrative system that manages the administrative, financial, and clinical aspects of a clinical system. An example is the electronic health record."
+        },
+        {
+          "type": "radios",
+          "question": "In the Foundation of Knowledge model, what describes the process of a nurse reading the data shown on the pulse oximeter?",
+          "choices": [
+            "Knowledge acquisition",
+            "Knowledge dissemination",
+            "Knowledge generation",
+            "Knowledge processing"
+          ],
+          "answers": [
+            "Knowledge acquisition"
+          ],
+          "feedback": "The step before knowledge processing is acquiring data."
+        },
+        {
+          "type": "checkboxes",
+          "question": "Which of the following pre-licensure KSAs are applicable to this scenario? Select all that apply:",
+          "choices": [
+            "Use high-quality electronic sources of health-care information.",
+            "Apply technology and information management tools to support safe processes of care.",
+            "Explain why information and technology skills are essential for safe patient care.",
+            "Evaluate the strengths and weaknesses of information systems used in patient care."
+          ],
+          "answers": [
+            "Use high-quality electronic sources of health-care information.",
+            "Apply technology and information management tools to support safe processes of care.",
+            "Explain why information and technology skills are essential for safe patient care.",
+            "Evaluate the strengths and weaknesses of information systems used in patient care."
+          ],
+          "feedback": "Monitoring equipment provides health care information. Use of monitors and the electronic health record assure patient is cared for safely. Information and technology skills demonstrate understanding of their use. The nurse will be able to describe the strengths and weaknesses of each type of system."
+        },
+        {
+          "type": "radios",
+          "question": "Assume that this hospital has been having poor outcomes (length of stay, mortality, readmission rates) for its patients admitted with pneumonia.  How would a master's prepared nurse process the knowledge gained from this and other patients, based on AACN’s Essential V?",
+          "choices": [
+            "Use of patient care and other technologies to deliver and enhance care.",
+            "Communication technologies to integrate and coordinate care.",
+            "Data management to analyze and improve outcomes of care.",
+            "Health information management for evidence-based care and health education."
+          ],
+          "answers": [
+            "Data management to analyze and improve outcomes of care."
+          ],
+          "feedback": "Although one could make a case that each of these applies, this is most applicable because it addresses outcomes of care."
+        },
+        {
+          "type": "radios",
+          "question": "What type of CBIS would a hospital use to assess its clinical outcomes?",
+          "choices": [
+            "Clinical Information System",
+            "Decision Support System",
+            "Management Information System",
+            "Hospital Information System"
+          ],
+          "answers": [
+            "Hospital Information System"
+          ],
+          "feedback": "Although some Clinical Information Systems may be able to provide outcomes by diagnosis, for example, it is more likely that a Hospital Information System will do so, while at the same time linking to financial information."
+        }
+      ],
+      "answerCode": 3131
+    }
+  ]
+}

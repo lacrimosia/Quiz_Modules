@@ -1,0 +1,114 @@
+{
+  "appTitle": "Virtual Hospital - Activity 2",
+  "coursePrefix": "NURS",
+  "courseNumber": 711,
+  "scenarios": [
+    {
+      "title": "Activity 2",
+      "startPoint": {
+        "top": 6.7,
+        "left": 67.2
+      },
+      "img": "img/NURS711_Activity02.jpg",
+      "points": [
+        {
+          "top": 34,
+          "left": 13.5,
+          "label": "Change of Shift Report",
+          "info": "Periods of dyspnea when %SPO2 fell below 90. O2 increased to 6 LPM."
+        },
+        {
+          "top": 32,
+          "left": 69,
+          "label": "Patient",
+          "info": "74 year old male patient with pneumonia.  Temperature 102° F, P 100, R 32"
+        },
+        {
+          "top": 45,
+          "left": 38.5,
+          "label": "Pulse Oximetry Machine",
+          "image": "img/include.jpg",
+          "overlays": [
+            {
+              "top": 13,
+              "left": 69.8,
+              "data": 89,
+              "class": "custom-overlay-class"
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "type": "radios",
+          "question": "On the pulse oximetry machine, what does %SPO2 89 represent?",
+          "choices": [
+            "Data",
+            "Information",
+            "Knowledge",
+            "Wisdom"
+          ],
+          "answers": [
+            "Data"
+          ],
+          "feedback": "Discrete entities described objectively without interpretation."
+        },
+        {
+          "type": "radios",
+          "question": "What practice competency is required for a Level 1 Beginning Nurse to use the pulse oximetry machine?",
+          "choices": [
+            "Computers Skills -- Data access",
+            "Computer Skills -- Documentation",
+            "Computer Skills -- Monitoring",
+            "Computer Skills -- Systems"
+          ],
+          "answers": [
+            "Computer Skills -- Monitoring"
+          ],
+          "feedback": "Uses computerized patient monitoring systems."
+        },
+        {
+          "type": "radios",
+          "question": "Which of the following is a decision support system?",
+          "choices": [
+            "An alarm sounds any time the patient’s %SPO2 drops below a 90%.",
+            "An alarm sounds when the patient’s 5 minute average for %SPO2 drops below 90% ",
+            "When the 5 minute average for a patient’s %SPO2 drops below 90%, an alarm sounds with a recommendation appearing on the screen.",
+            "When the 5 minute average for a patient’s %SPO2 drops below 90%, the O2 flow to the patient’s cannula is increased to preset intervals."
+          ],
+          "answers": [
+            "When the 5 minute average for a patient’s %SPO2 drops below 90%, an alarm sounds with a recommendation appearing on the screen."
+          ],
+          "feedback": "Computer applications designed to facilitate human decision-making processes. Usually decision support systems are rule based, using a specified knowledge base and a set of rules to analyze data and information and provide recommendations to users."
+        },
+        {
+          "type": "radios",
+          "question": "A Level 2 Experienced Nurse wishes to determine whether nursing staff are intervening when a patient’s %SPO2 drops below 90%.  The hospital uses NANDA/NIC/NOC. Which taxonomy/ies would the nurse consult?",
+          "choices": [
+            "NANDA",
+            "NIC",
+            "NOC",
+            "All of the above"
+          ],
+          "answers": [
+            "All of the above"
+          ],
+          "feedback": "Due to the wide variety in nursing diagnoses (e.g., chronic pain; breathing pattern, ineffective), wide variety in interventions, and wide variety in outcomes, the nurses would have to consult all taxonomies to answer this question."
+        },
+        {
+          "type": "radios",
+          "question": "Click on the computer monitor and read the note. Does this constitute “meaningful use” in an electronic health record (EHR)?",
+          "choices": [
+            "Yes",
+            "No"
+          ],
+          "answers": [
+            "No"
+          ],
+          "feedback": "Text fields do not allow the data to be used in a meaningful way. Must use codes."
+        }
+      ],
+      "answerCode": 1071
+    }
+  ]
+}

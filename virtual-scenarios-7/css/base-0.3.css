@@ -1,0 +1,422 @@
+/*  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+    1. GLOBAL
+    ......................................  */
+
+html {
+    background: rgb(248,248,248);
+}
+
+html, .pure-g [class *= "pure-u"] {
+    font: 1em/1.5 verdana, sans-serif;
+}
+
+html, body {
+    overflow-x: hidden;
+    height:100%;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+.mobile-check {
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*  ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+    1. Grid
+    ......................................  */
+
+.container {
+    display: block;
+    margin: 0 auto;
+}
+
+.pure-g > div {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 35.5em) {
+    .container {
+        width: 540px;
+    }
+}
+
+@media screen and (min-width: 48em) {
+    .container {
+        width: 720px;
+    }
+    .l-box {
+        padding: 0 2% 0 0;
+    }
+    .l-box:last-child {
+        padding-right: 0;
+    }
+}
+
+@media screen and (min-width: 64em) {
+    .container {
+        width: 960px;
+    }
+}
+
+@media screen and (min-width: 80em) {
+    .container {
+        width: 1200px;
+    }
+}
+
+/*  ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+    1. Helpers
+    ......................................  */
+
+.stilts {
+    margin-bottom: 1.5em;
+}
+
+.barefoot {
+    margin-bottom: 0;
+}
+
+.tophat {
+	margin-top: 1.5em;
+}
+
+.haircut {
+    margin-top: 0;
+}
+
+span.alert {
+    color: #f1c40f;
+}
+
+.clearfix:before,
+.clearfix:after,
+.pure-g:before,
+.pure-g:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after,
+.pure-g:after {
+    clear: both;
+}
+
+.clearfix,
+.pure-g {
+    *zoom: 1;
+}
+
+/*  ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+    1. Typography
+    ......................................  */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+.glyph {
+    font: 1em 'FontAwesome';
+    text-transform: none;  
+    display: inline-block;
+    text-align: center;
+}
+
+span.glyph {
+    width: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', serif;
+}
+
+a {
+    color: #e74c3c;
+}
+
+a:not(.pure-button):hover {
+    color: #222;
+}
+
+/*  ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+    1. Inputs & Buttons
+    ......................................  */
+
+select,
+input[type="checkbox"],
+input[type="radio"],
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+    cursor: pointer;
+}
+
+.button-oe {
+    background-color: #e74c3c;
+}
+
+/*  ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
+    1. Misc.
+    ......................................  */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+    2. OE HEADER
+    ......................................  */
+
+.oe-header {
+    border-bottom: 1px solid rgba(0,0,0,.08);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+
+.oe-header div.info {
+    text-align: left;
+    background: rgb(255,255,255);
+    color: #333;
+    position: relative;
+    z-index: 2;
+}
+
+.oe-header div.info div.course-info {
+    float: left;
+    height: 3.5em;
+    width: 3.5em;
+    text-align: center;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-right: .75em;
+    letter-spacing: -1px;
+    line-height: 3.5em;
+    background: #333;
+    color: #fff;
+    display: table;
+    background: rgb(229,34,56);
+}
+
+.oe-header div.info div.course-info p {
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 1.2;
+    margin: 0;
+    white-space: nowrap;
+    font-size: .875em;
+}
+
+.oe-header div.info h1.app-info {
+    font-size: 1.5em;
+    display: inline-block;
+    line-height: 56px;
+    margin: 0;
+}
+
+.oe-header button.mobile-menu-button {
+    z-index: 3;
+    background: #fff;
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 3.5em;
+    padding: 0 2%;
+    text-align: right;
+    line-height: 3.5em;
+    border: 0;
+    color: #333;
+    outline: 0;
+}
+
+.oe-header button.mobile-menu-button:hover {
+    color: #e74c3c;
+}
+
+.oe-header button.mobile-menu-button span {
+    font-size: 1.5em;
+}
+
+.oe-header nav {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    right: .5em;
+    line-height: 3.5;
+}
+
+.oe-header nav a {
+    font-family: 'Roboto', serif;
+    text-decoration: none;
+    padding: 0 .5em;
+}
+
+.oe-header nav a:hover {
+
+}
+
+@media screen and (min-width: 0px) and (max-width: 739px) {
+    .oe-header div.col{
+        padding: 0;
+        position: relative;
+    }
+    .oe-header div.info {
+        float: none;
+    }
+    .oe-header button.mobile-menu-button {
+        display: inline-block;
+    }
+    .oe-header nav {
+        position: absolute;
+        width: 100%;
+        top: -10em;
+        right: 0;
+        margin: 0;
+        float: none;
+        display: block;
+        text-align: center;
+        background: #333;
+        z-index: 1;
+    }
+    .oe-header nav.mobile-open {
+        top: 3.5em;
+        -webkit-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+    }
+    .oe-header nav a {
+        border: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+        border-radius: 0;
+        color: #555;
+        padding: 0;
+    }
+    .oe-header nav a {
+        color: #fff;  
+    }
+    .oe-header nav a:hover {
+        background: #333;
+        color: #e74c3c;
+    }
+}
+
+/*  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+    3. CONTENT
+    ......................................  */
+    
+section.content {
+    padding: 1.5em 0;
+}
+
+/*  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+    4. FOOTER
+    ......................................  */
+
+.oe-footer {
+    padding: 1.5em 0;
+    text-align: center;
+}
+
+.oe-footer img.oe-logo {
+    max-width: 100%;
+    width: 300px;
+}
+
+.oe-footer p.copyright {
+    margin-top: 0;
+}
+
+/*  ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+    5. PRINT STYLES
+    ......................................  */
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+}
+
+@media print {
+
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+
+}

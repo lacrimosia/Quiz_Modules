@@ -1,0 +1,82 @@
+{
+  "appTitle": "Virtual Hospital - Activity 7",
+  "coursePrefix": "NURS",
+  "courseNumber": 711,
+  "scenarios": [
+    {
+      "title": "Patient B",
+      "startPoint": {
+        "top": 6.7,
+        "left": 54.8
+      },
+      "img": "img/NURS711_Activity07.jpg",
+      "points": [
+        {
+          "top": 68,
+          "left": 58,
+          "label": "Patient",
+          "info": "\"Help.\""
+        }
+      ],
+      "questions": [
+        {
+          "type": "radios",
+          "question": "An accident investigation determines that there had not been hourly rounding on this patient. Using the GEMS Framework, what type of error is this?",
+          "choices": [
+            "Skill-based slips (and lapses)",
+            "Rule-based mistakes",
+            "Knowledge-based mistakes",
+            "Violations of rules or norms"
+          ],
+          "answers": [
+            "Violations of rules or norms"
+          ],
+          "feedback": "Yes; inaction"
+        },
+        {
+          "type": "checkboxes",
+          "question": "The nurses who discovered Patient B examined him and found no evidence of harm. They notified the patient’s physician and returned him to bed. How would you classify this medical error? (Select all that apply.)",
+          "choices": [
+            "Adverse event",
+            "Sentinel event",
+            "Near miss",
+            "Nonadverse event"
+          ],
+          "answers": [
+            "Adverse event"
+          ],
+          "feedback": ""
+        },
+        {
+          "type": "radios",
+          "question": "How could Health Information Technology (HIT) be used to reduce falls?",
+          "choices": [
+            "Entering the number of falls on this unit monthly for a year.",
+            "Entering the number of falls divided by the patient census monthly for a year.",
+            "Converting data to information and information to knowledge for making a decision.",
+            "Use statistical process controls."
+          ],
+          "answers": [
+            "Converting data to information and information to knowledge for making a decision."
+          ],
+          "feedback": ""
+        },
+        {
+          "type": "radios",
+          "question": "Using QSEN, what competency is most applicable to this scenario?",
+          "choices": [
+            "Patient-centered care",
+            "Teamwork and collaboration",
+            "Quality improvement",
+            "Safety"
+          ],
+          "answers": [
+            "Safety"
+          ],
+          "feedback": ""
+        }
+      ],
+      "answerCode": 1204
+    }
+  ]
+}

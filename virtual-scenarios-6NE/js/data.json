@@ -1,0 +1,92 @@
+{
+  "appTitle": "Virtual Hospital - Activity 6NE",
+  "coursePrefix": "NURS",
+  "courseNumber": 711,
+  "scenarios": [
+    {
+      "title": "Patient B",
+      "startPoint": {
+        "top": 6.7,
+        "left": 54.8
+      },
+      "img": "img/NURS711_Activity06_NE.jpg",
+      "points": [
+        {
+          "top": 85,
+          "left": 66,
+          "label": "Patient",
+          "info": "The patient has fallen out of bed."
+        },
+        {
+          "top": 30,
+          "left": 41,
+          "label": "Bulletin Board",
+          "include": "partials/table.html"
+        }
+      ],
+      "questions": [
+        {
+          "type": "checkboxes",
+          "question": "How would a Continuous Quality Improvement program in a school of nursing use the data on the bulletin board?  (Select all that apply.)",
+          "choices": [
+            "For curriculum review",
+            "For setting performance goals",
+            "For assessing whether the school meets performance goals",
+            "For benchmarking performance against other schools"
+          ],
+          "answers": [
+            "For curriculum review",
+            "For setting performance goals",
+            "For assessing whether the school meets performance goals",
+            "For benchmarking performance against other schools"
+          ],
+          "feedback": ""
+        },
+        {
+          "type": "radios",
+          "question": "In teaching nursing students about the role played by human error in causing medical adverse events, the philosophy is now which one of the following:",
+          "choices": [
+            "Concealment",
+            "Infallibility",
+            "Glasnost",
+            "Individual responsibility"
+          ],
+          "answers": [
+            "Glasnost"
+          ],
+          "feedback": ""
+        },
+        
+        {
+          "type": "radios",
+          "question": "Where in the Risk Management Matrix would you place patient falls?",
+          "choices": [
+            "Low probability/Significant impact",
+            "Medium probability/Moderate impact",
+            "High probability/Moderate impact",
+            "High probability/Significant impact"
+          ],
+          "answers": [
+            "High probability/Significant impact"
+          ],
+          "feedback": "Hospitalized patients have a high probability of falling with severe consequences possible."
+        },
+        {
+          "type": "radios",
+          "question": "In a post conference with the nursing students, the instructor discusses the modified Haddon Matrix as a way to analyze the adverse event of a patient fall. Which of these factors would go under Preevent in Environment?",
+          "choices": [
+            "Patient narcotics",
+            "Dark room",
+            "Lack of familiarity with fall protocols",
+            "Delirium"
+          ],
+          "answers": [
+            "Dark room"
+          ],
+          "feedback": ""
+        }
+      ],
+      "answerCode": 9202
+    }
+  ]
+}
