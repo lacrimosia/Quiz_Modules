@@ -93,7 +93,7 @@
           "type": "radios",
           "question": "The nurse looks at the scheduling system. In terms of administrative processes related to patient care, what information will be there?",
           "choices": [
-            "The nurse’s work schedule for the coming month.",
+            "The nurse's work schedule for the coming month.",
             "Insurance eligibility verification.",
             "Electronic scheduling for the next PPT draw.",
             "The medication administration schedule."
@@ -104,7 +104,7 @@
           "feedback": "Schedules in-patient procedures."
         }
       ],
-      "answerCode": 0022
+      "answerCode": "0022"
     }
   ]
 }
