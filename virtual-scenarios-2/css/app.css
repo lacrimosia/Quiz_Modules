@@ -224,6 +224,11 @@ div.question-container {
 	box-sizing: border-box;
 }
 
+/* incorrect text */
+.incorrectText{
+	color: #E74C3C;
+}
+
 /* Text Input */
 
 form.text-form {

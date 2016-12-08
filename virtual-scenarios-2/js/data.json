@@ -40,8 +40,8 @@
       ],
       "questions": [
         {
-          "type": "radios",
-          "question": "On the pulse oximetry machine, what does %SPO2 89 represent?",
+          "type": "radiosFeedback",
+          "question": "On the pulse oximetry machine, what would a trend of declining SPO2 represent?",
           "choices": [
             "Data",
             "Information",
@@ -49,9 +49,14 @@
             "Wisdom"
           ],
           "answers": [
-            "Data"
+            "Information"
           ],
-          "feedback": "Discrete entities described objectively without interpretation."
+          "feedback": [
+            "Incorrect. There is more than one bit of data.",
+            "Correct. This shows a trend.",
+            "Incorrect. A trend line with a direction provides information. A nurse would use knowledge to interpret the trend.",
+            "Observing information is not yet wisdom. No action is required."
+          ]
         },
         {
           "type": "radios",

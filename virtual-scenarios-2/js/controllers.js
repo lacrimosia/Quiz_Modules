@@ -149,6 +149,16 @@ angular.module('myApp.controllers', [])
         }
       }
 
+       // get the index of the choice
+      // assign this value to get the index of the chosen radio button 
+      $scope.getIndexChoice = 0;
+
+      // get text
+      $scope.getText = " ";
+
+      // Selected Choice on the feedback radio buttons
+      $scope.myChoice = false;
+
       // object to keep track of correct answers on "radio" and "checkbox" questions
       $scope.switchboard = {};
 
@@ -162,10 +172,37 @@ angular.module('myApp.controllers', [])
           if($scope.scenario.questions[questionIndex].answers.indexOf(choice) > -1) {
             return true;
           }
+        }else if(type === "radiosFeedback"){
+          if(choice === $scope.scenario.questions[questionIndex].answers[0]) {
+            // returns true and adds the correct class to template
+            return true;
+          }else{
+            return false;
+          }
         } else if(type === "textInput") {
           if(validity === true) {
             return true;
           }
+        }
+      }
+
+      // get Text
+      $scope.changeText = function(questionIndex, choiceIndex){
+        $scope.getText = $scope.scenario.questions[questionIndex].feedback[choiceIndex];
+        console.log("text", $scope.getText);
+        return $scope.getText;
+      }
+
+
+      // correct answers add correct css class
+      $scope.getCorrectCSS = function(type, questionIndex, choiceIndex, choice){
+        if(type == 'radiosFeedback'){
+          if(choice === $scope.scenario.questions[questionIndex].answers[0]) {
+            $scope.myChoice = true;
+          }else{
+            $scope.myChoice = false;
+          }
+          return $scope.myChoice;
         }
       }
 
@@ -176,6 +213,12 @@ angular.module('myApp.controllers', [])
       $scope.allowNext = function(type, questionIndex, choiceIndex, choice, validity) {
         // if radio
         if(type === "radio") {
+          if(choice === $scope.scenario.questions[questionIndex].answers[0]) {
+            $scope.advance[$scope.currentIndex] = true;
+          }
+        // if checkbox
+        // radio Feedback
+        }if(type === "radiosFeedback") {
           if(choice === $scope.scenario.questions[questionIndex].answers[0]) {
             $scope.advance[$scope.currentIndex] = true;
           }
