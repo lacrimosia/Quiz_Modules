@@ -80,12 +80,25 @@
           <!-- radios -->
           <form ng-if="showIf(question.type, 'radios')">
             <div class="choice-set" ng-repeat="choice in question.choices" ng-class="{'correct': assignCorrect('radio', $parent.$index, $index, choice)}">
-              <input type="radio" id="{{$parent.$index}}-{{$index}}" name="radios" ng-click="allowNext('radio', $parent.$index, $index, choice)">
+              <input type="radio" id="{{$parent.$index}}-{{$index}}" name="radios" ng-click="allowNext('radio', $parent.$index, $index, choice); getIndexChoice($index);">
               <label for="{{$parent.$index}}-{{$index}}">{{choice}}</label>
             </div>
-            <p ng-if="question.feedback" ng-show="!preventAdvance(currentIndex, scenario.questions)">
-              <span class="correct">{{question.feedback}}</span>
+            <p ng-show="!preventAdvance(currentIndex, scenario.questions)">
+              <span class="correct">{{ question.feedback }}</span>
             </p>
+            <p>
+              <span class="glyph alert">&#xf071;</span> <em>You will not be able to proceed until you have selected the correct answer.</em>
+            </p>
+          </form>
+          <!-- radios with Feedback -->
+          <form ng-if="showIf(question.type, 'radiosFeedback')">
+            <div class="choice-set" ng-repeat="choice in question.choices" ng-class="{'correct': assignCorrect('radiosFeedback', $parent.$index, $index, choice), 'incorrect': !assignCorrect('radiosFeedback', $parent.$index, $index, choice)}">
+              <input type="radio" id="{{$parent.$index}}-{{$index}}" name="radios" ng-click="allowNext('radio', $parent.$index, $index, choice); getIndexChoice = $index;">
+              <label for="{{$parent.$index}}-{{$index}}">{{choice}}</label>
+            </div>
+            <p ng-show="!preventAdvance(currentIndex, scenario.questions)">
+                <span class="correct">{{ question.feedback[getIndexChoice] }}</span>
+              </p>
             <p>
               <span class="glyph alert">&#xf071;</span> <em>You will not be able to proceed until you have selected the correct answer.</em>
             </p>

@@ -162,12 +162,22 @@ angular.module('myApp.controllers', [])
           if($scope.scenario.questions[questionIndex].answers.indexOf(choice) > -1) {
             return true;
           }
-        } else if(type === "textInput") {
+        }else if(type === "radiosFeedback"){
+          if(choice === $scope.scenario.questions[questionIndex].answers[0]) {
+            return true;
+          }else{
+            return false;
+          }
+        }else if(type === "textInput") {
           if(validity === true) {
             return true;
           }
         }
       }
+
+      // get the index of the choice
+      // assign this value to get the index of the chosen radio button 
+      $scope.getIndexChoice = 0;
 
       // object to keep track of which checkbox answers have been submitted
       $scope.unveil = {};
@@ -178,6 +188,11 @@ angular.module('myApp.controllers', [])
         if(type === "radio") {
           if(choice === $scope.scenario.questions[questionIndex].answers[0]) {
             $scope.advance[$scope.currentIndex] = true;
+          }
+        // if radio with the feedback
+        }if(type === "radiosFeedback") {
+          if(choice === $scope.scenario.questions[questionIndex].answers[0]) {
+            $scope.advance[$scope.currentIndex] = false;
           }
         // if checkbox
         } else if(type === "checkbox") {

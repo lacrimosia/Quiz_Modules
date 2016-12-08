@@ -54,18 +54,23 @@
           "feedback": "Integrative system that manages the administrative, financial, and clinical aspects of a clinical system. An example is the electronic health record."
         },
         {
-          "type": "radios",
-          "question": "In the Foundation of Knowledge model, what describes the process of a nurse reading the data shown on the pulse oximeter?",
+          "type": "radiosFeedback",
+          "question": "The pulse oximeter shows a reading of 87 BPM. Characterize this reading in an informatics framework.",
           "choices": [
-            "Knowledge acquisition",
-            "Knowledge dissemination",
-            "Knowledge generation",
-            "Knowledge processing"
+            "Data",
+            "Information",
+            "Knowledge",
+            "Wisdom"
           ],
           "answers": [
-            "Knowledge acquisition"
+            "Data"
           ],
-          "feedback": "The step before knowledge processing is acquiring data."
+          "feedback": [
+            "Correct. This is a single bit of data, not yet converted into information or knowledge. It is a discrete entity described objectively without interpretation.",
+            "Incorrect. More data are needed for the nurse to be able to convert a single reading to information.",
+            "Incorrect. The nurse has not yet converted this single bit of data into knowledge.",
+            "Incorrect. The nurse must convert the data to information, then knowledge to determine whether action is needed."
+          ]
         },
         {
           "type": "checkboxes",
