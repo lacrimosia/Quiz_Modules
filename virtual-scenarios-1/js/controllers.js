@@ -149,6 +149,16 @@ angular.module('myApp.controllers', [])
         }
       }
 
+      // get the index of the choice
+      // assign this value to get the index of the chosen radio button 
+      $scope.getIndexChoice = 0;
+
+      // get text
+      $scope.getText = "";
+
+      // Selected Choice on the feedback radio buttons
+      $scope.myChoice = false;
+
       // object to keep track of correct answers on "radio" and "checkbox" questions
       $scope.switchboard = {};
 
@@ -166,8 +176,9 @@ angular.module('myApp.controllers', [])
         }else if(type === "radiosFeedback"){
           if(choice === $scope.scenario.questions[questionIndex].answers[0]) {
             // returns true and adds the correct class to template
-           // $scope.getText = $scope.scenario.questions[questionIndex].feedback[choiceIndex];
             return true;
+          }else{
+            return false;
           }
         }else if(type === "textInput") {
           if(validity === true) {
@@ -176,17 +187,23 @@ angular.module('myApp.controllers', [])
         }
       }
 
-      // get the index of the choice
-      // assign this value to get the index of the chosen radio button 
-      $scope.getIndexChoice = 0;
-
-      // get text
-      $scope.getText = "";
-
       // get Text
       $scope.changeText = function(questionIndex, choiceIndex){
         $scope.getText = $scope.scenario.questions[questionIndex].feedback[choiceIndex];
         return $scope.getText;
+      }
+
+
+      // correct answers add correct css class
+      $scope.getCorrectCSS = function(type, questionIndex, choiceIndex, choice){
+        if(type == 'radiosFeedback'){
+          if(choice === $scope.scenario.questions[questionIndex].answers[0]) {
+            $scope.myChoice = true;
+          }else{
+            $scope.myChoice = false;
+          }
+          return $scope.myChoice;
+        }
       }
 
       // object to keep track of which checkbox answers have been submitted

@@ -348,6 +348,10 @@ form div.choice-set input + label:after {
 	display: none;
 }
 
+/* incorrect text */
+.incorrectText{
+	color: #E74C3C;
+}
 
 /* Table */
 
