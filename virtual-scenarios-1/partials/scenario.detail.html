@@ -94,7 +94,7 @@
           <!-- radios with Feedback -->
           <form ng-if="showIf(question.type, 'radiosFeedback')">
             <div class="choice-set" ng-repeat="choice in question.choices" ng-class="{'correct': assignCorrect('radiosFeedback', $parent.$index, $index, choice), 'incorrect': !assignCorrect('radiosFeedback', $parent.$index, $index, choice)}">
-              <input type="radio" id="{{$parent.$index}}-{{$index}}" name="radios" ng-click="allowNext('radio', $parent.$index, $index, choice); getIndexChoice = $index;">
+              <input type="radio" id="{{$parent.$index}}-{{$index}}" name="radios" ng-click="allowNext('radio', $parent.$index, $index, choice); getIndexChoice = $index; changeText($parent.$index, getIndexChoice)">
               <label for="{{$parent.$index}}-{{$index}}">{{choice}}</label>
             </div>
             <p ng-show="!preventAdvance(currentIndex, scenario.questions)">

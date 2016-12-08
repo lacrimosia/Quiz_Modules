@@ -152,9 +152,6 @@ angular.module('myApp.controllers', [])
       // object to keep track of correct answers on "radio" and "checkbox" questions
       $scope.switchboard = {};
 
-      // get text
-      $scope.getText = "";
-
       // sets 'correct' CSS class for "radio" and "checkbox" questions
       $scope.assignCorrect = function(type, questionIndex, choiceIndex, choice, validity) {
         if(type === "radio") {
@@ -169,7 +166,7 @@ angular.module('myApp.controllers', [])
         }else if(type === "radiosFeedback"){
           if(choice === $scope.scenario.questions[questionIndex].answers[0]) {
             // returns true and adds the correct class to template
-            $scope.getText = $scope.scenario.questions[questionIndex].feedback[choiceIndex];
+           // $scope.getText = $scope.scenario.questions[questionIndex].feedback[choiceIndex];
             return true;
           }
         }else if(type === "textInput") {
@@ -182,6 +179,15 @@ angular.module('myApp.controllers', [])
       // get the index of the choice
       // assign this value to get the index of the chosen radio button 
       $scope.getIndexChoice = 0;
+
+      // get text
+      $scope.getText = "";
+
+      // get Text
+      $scope.changeText = function(questionIndex, choiceIndex){
+        $scope.getText = $scope.scenario.questions[questionIndex].feedback[choiceIndex];
+        return $scope.getText;
+      }
 
       // object to keep track of which checkbox answers have been submitted
       $scope.unveil = {};
